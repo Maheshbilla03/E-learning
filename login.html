@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stackly Learn Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="left-panel">
+    <div class="overlay">
+      <h1>Stackly Learn</h1>
+      <p>
+        Learn Web Development, React JS, Python,
+        UI/UX Design and Build Your Career.
+      </p>
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="">
+    </div>
+  </div>
+
+  <div class="right-panel">
+
+    <!-- LOGIN -->
+    <div class="form-box active" id="loginBox">
+  <h2>Login</h2>
+
+  <input type="email" id="loginEmail" placeholder="Email">
+
+  <input type="password" id="loginPassword" placeholder="Password">
+
+  <div class="forgot-box">
+    <a href="#" class="forgot-password">Forgot Password?</a>
+  </div>
+
+<button onclick="login()">Login</button>
+
+  <p>
+    Don't have an account?
+    <span onclick="showSignup()">Signup</span>
+  </p>
+</div>
+    <!-- SIGNUP -->
+    <div class="form-box" id="signupBox">
+      <h2>Create Account</h2>
+
+      <input type="text" id="signupName" placeholder="Full Name">
+
+      <input type="email" id="signupEmail" placeholder="Email">
+
+      <input type="tel" id="signupPhone" placeholder="Phone Number">
+
+      <input type="password" id="signupPassword" placeholder="Password">
+
+      <button onclick="createAccount()">Signup</button>
+
+      <p>
+        Already have an account?
+        <span onclick="showLogin()">Login</span>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

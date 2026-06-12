@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Stackly E-Learning</title>
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+
+
+ <header class="navbar">
+  <a href="index.html" class="logo">
+     <img src="logo2.png" alt="stackly logo">
+    <span>Stackly Learn</span>
+</a>
+
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="course.html">Courses</a>
+    <a href="service.html">Services</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="contact.html">Contact</a>
+
+    <a href="login.html" class="login-btn">Login</a>
+  </nav>
+
+  <div class="menu" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="course-hero">
+  <div class="hero-content">
+    <h1>Explore Our Courses</h1>
+    <p>Learn job-ready skills with practical projects, expert mentors, and flexible online training.</p>
+    <a href="#courses" class="btn">View Courses</a>
+  </div>
+</section>
+
+<section class="category-section">
+  <h2>Popular Learning Categories</h2>
+  <p>Choose your learning path and start building your career today.</p>
+
+  <div class="category-grid">
+    <div class="category-box">💻 Web Development</div>
+    <div class="category-box">🎨 UI/UX Design</div>
+    <div class="category-box">🐍 Python</div>
+    <div class="category-box">📱 Digital Marketing</div>
+  </div>
+</section>
+
+<section class="courses-section" id="courses">
+  <h2>Featured Courses</h2>
+  <p class="section-text">Start learning from beginner-friendly courses with real-time examples.</p>
+
+  <div class="course-grid">
+
+    <div class="course-card">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Web Development">
+      <div class="course-content">
+        <span>Beginner</span>
+        <h3>Full Stack Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript, React, Node.js, and build real-world websites.</p>
+        <h4>⏱ 12 Weeks | ⭐ 4.8</h4>
+        <a href="404.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=80" alt="UI UX Design">
+      <div class="course-content">
+        <span>Creative</span>
+        <h3>UI/UX Design Masterclass</h3>
+        <p>Learn wireframes, prototypes, user research, Figma, and modern app design.</p>
+        <h4>⏱ 8 Weeks | ⭐ 4.7</h4>
+        <a href="404.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80" alt="Python">
+      <div class="course-content">
+        <span>Programming</span>
+        <h3>Python Programming</h3>
+        <p>Master Python basics, functions, OOP, file handling, APIs, and projects.</p>
+        <h4>⏱ 10 Weeks | ⭐ 4.9</h4>
+        <a href="404.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Digital Marketing">
+      <div class="course-content">
+        <span>Marketing</span>
+        <h3>Digital Marketing</h3>
+        <p>Learn SEO, social media marketing, Google Ads, email marketing, and analytics.</p>
+        <h4>⏱ 6 Weeks | ⭐ 4.6</h4>
+        <a href="404.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80" alt="JavaScript">
+      <div class="course-content">
+        <span>Frontend</span>
+        <h3>JavaScript Complete Course</h3>
+        <p>Learn DOM, events, functions, arrays, API calls, ES6, and mini projects.</p>
+        <h4>⏱ 7 Weeks | ⭐ 4.8</h4>
+        <a href="404.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=900&q=80" alt="React JS">
+      <div class="course-content">
+        <span>Advanced</span>
+        <h3>React JS Development</h3>
+        <p>Learn components, props, hooks, routing, API integration, and React projects.</p>
+        <h4>⏱ 9 Weeks | ⭐ 4.9</h4>
+        <a href="404.html">Enroll Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="why-section">
+  <h2>Why Learn With Stackly?</h2>
+
+  <div class="why-grid">
+    <div class="why-box">
+      <h3>✅ Practical Projects</h3>
+      <p>Build portfolio-ready projects and improve your confidence.</p>
+    </div>
+
+    <div class="why-box">
+      <h3>👨‍🏫 Expert Trainers</h3>
+      <p>Learn from experienced mentors with simple explanations.</p>
+    </div>
+
+    <div class="why-box">
+      <h3>📜 Certificate</h3>
+      <p>Get course completion certificates after finishing your training.</p>
+    </div>
+
+    <div class="why-box">
+      <h3>🚀 Career Support</h3>
+      <p>Resume guidance, interview preparation, and job-ready skills.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Start Your Learning Journey Today</h2>
+  <p>Upgrade your skills and become career-ready with Stackly Learn.</p>
+  <a href="contact.html" class="btn">Contact Now</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+
+    <div class="footer-box">
+      <img src="logo.jpeg" alt="Stackly Learn" class="footer-logo">
+      <h2>Stackly Learn</h2>
+      <p>
+        Stackly Learn provides practical online courses, real-time projects,
+        career guidance, and expert mentorship for students and professionals.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="about.html">📖 About</a></li>
+        <li><a href="course.html">📚 Courses</a></li>
+        <li><a href="404.html">⭐ Features</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Top Courses</h3>
+      <ul>
+        <li><a href="404.html">Web Development</a></li>
+        <li><a href="404.html">React JS</a></li>
+        <li><a href="404.html">Python</a></li>
+        <li><a href="404.html">UI/UX Design</a></li>
+        <li><a href="404.html">Digital Marketing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Info</h3>
+      <p>📍 Hyderabad, Telangana, India</p>
+      <p>📧 support@stacklylearn.com</p>
+      <p>📞 +91 98765 43210</p>
+
+      <div class="social-links">
+        <a href="404.html">FB</a>
+        <a href="404.html">IG</a>
+        <a href="404.html">IN</a>
+        <a href="404.html">YT</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Stackly Learn. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="course.js"></script>
+</body>
+</html>
