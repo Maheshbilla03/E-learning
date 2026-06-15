@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Stackly Learn</title>
+
+  <link rel="stylesheet" href="dashboard.css">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="top-logo">
+    <img src="logo2.webp" alt="Stackly Logo">
+    <span>Stackly Learn</span>
+  </a>
+
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="course.html">Courses</a>
+    <a href="service.html">Services</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="login-btn">Login</a>
+  </nav>
+
+  <div class="menu" id="menuIcon" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="dashboard">
+
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="side-logo">
+      <img src="logo2.webp" alt="Stackly Logo">
+      <span>Stackly Learn</span>
+    </a>
+
+    <nav class="side-menu">
+      <a href="#dashboard" class="active">🏠 Dashboard</a>
+      <a href="#courses">📚 My Courses</a>
+      <a href="#progress">📈 Progress</a>
+      <a href="#assignments">📝 Assignments</a>
+      <a href="#schedule">📅 Schedule</a>
+      <a href="#certificates">🏆 Certificates</a>
+      <a href="#settings">⚙ Settings</a>
+      <a href="index.html">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <main class="main-content" id="dashboard">
+
+    <section class="topbar">
+      <div>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <h1>Welcome Back, Mahesh 👋</h1>
+        <p>Continue your learning and track your progress.</p>
+      </div>
+
+      <div class="profile">
+        <img src="m.webp" alt="Profile">
+        <div>
+          <h3>Mahesh Billa</h3>
+          <span>Front-End Learner</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <h2>08</h2>
+        <p>Enrolled Courses</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>72%</h2>
+        <p>Overall Progress</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>15</h2>
+        <p>Assignments Done</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>04</h2>
+        <p>Certificates</p>
+      </div>
+    </section>
+
+    <section class="content-grid">
+
+      <div class="card large-card" id="courses">
+        <h2>My Active Courses</h2>
+
+        <div class="course-item">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=300&q=80" alt="Web Development">
+          <div>
+            <h3>Full Stack Web Development</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+          <b>80%</b>
+        </div>
+
+        <div class="course-item">
+          <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=300&q=80" alt="React JS">
+          <div>
+            <h3>React JS Development</h3>
+            <p>Hooks, Router, API, Projects</p>
+            <div class="progress"><span style="width:65%"></span></div>
+          </div>
+          <b>65%</b>
+        </div>
+
+        <div class="course-item">
+          <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=300&q=80" alt="Python">
+          <div>
+            <h3>Python Programming</h3>
+            <p>Basics, OOP, Functions, Projects</p>
+            <div class="progress"><span style="width:45%"></span></div>
+          </div>
+          <b>45%</b>
+        </div>
+      </div>
+
+      <div class="card" id="progress">
+        <h2>Learning Progress</h2>
+        <div class="circle-progress">
+          <span>72%</span>
+        </div>
+        <p class="center-text">Great job! You completed 72% of your learning target this month.</p>
+      </div>
+
+      <div class="card" id="schedule">
+        <h2>Today Schedule</h2>
+
+        <div class="schedule">
+          <p><b>10:00 AM</b> - JavaScript Class</p>
+          <p><b>12:00 PM</b> - React Practice</p>
+          <p><b>03:00 PM</b> - Assignment Review</p>
+          <p><b>06:00 PM</b> - Mentor Session</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Top Mentors</h2>
+
+        <div class="mentor">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80" alt="Mentor">
+          <div>
+            <h4>Rahul Sharma</h4>
+            <p>Web Development</p>
+          </div>
+        </div>
+
+        <div class="mentor">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Mentor">
+          <div>
+            <h4>Priya Reddy</h4>
+            <p>UI / UX Design</p>
+          </div>
+        </div>
+
+        <div class="mentor">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Mentor">
+          <div>
+            <h4>Arjun Kumar</h4>
+            <p>React JS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card large-card" id="assignments">
+        <h2>Assignments</h2>
+
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Course</th>
+                <th>Status</th>
+                <th>Due Date</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Portfolio Website</td>
+                <td>Web Development</td>
+                <td><span class="done">Completed</span></td>
+                <td>12 Jun</td>
+              </tr>
+
+              <tr>
+                <td>React Todo App</td>
+                <td>React JS</td>
+                <td><span class="pending">Pending</span></td>
+                <td>15 Jun</td>
+              </tr>
+
+              <tr>
+                <td>Python Calculator</td>
+                <td>Python</td>
+                <td><span class="progress-status">In Progress</span></td>
+                <td>18 Jun</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Notifications</h2>
+        <div class="notification">🔔 New React class uploaded.</div>
+        <div class="notification">📢 Assignment deadline updated.</div>
+        <div class="notification">🏆 Certificate available for HTML CSS.</div>
+        <div class="notification">💬 Mentor replied to your doubt.</div>
+      </div>
+
+      <div class="card" id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate">🏆 HTML & CSS Certificate</div>
+        <div class="certificate">🏆 JavaScript Basics Certificate</div>
+        <div class="certificate">🏆 Responsive Design Certificate</div>
+      </div>
+
+      <div class="card" id="settings">
+        <h2>Settings</h2>
+        <p class="center-text">Manage profile, password, notifications and learning preferences.</p>
+        <button class="btn">Update Profile</button>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+
+        <div class="footer-box">
+          <a href="index.html" class="footer-logo">
+            <img src="img.1.webp" alt="Stackly Learn Logo">
+          </a>
+
+          <p>
+            Stackly Learn provides quality online education and practical skills
+            to help students build a successful career.
+          </p>
+
+          <div class="social-icons">
+            <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="404.html"><i class="fab fa-instagram"></i></a>
+            <a href="404.html"><i class="fab fa-youtube"></i></a>
+            <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
+          <a href="about.html"><i class="fas fa-angle-right"></i> About</a>
+          <a href="course.html"><i class="fas fa-angle-right"></i> Courses</a>
+          <a href="dashboard.html"><i class="fas fa-angle-right"></i> Dashboard</a>
+          <a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Courses</h3>
+          <a href="course.html"><i class="far fa-circle"></i> Web Development</a>
+          <a href="course.html"><i class="far fa-circle"></i> Programming</a>
+          <a href="course.html"><i class="far fa-circle"></i> UI / UX Design</a>
+          <a href="course.html"><i class="far fa-circle"></i> Digital Marketing</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-location-dot"></i> 123 Education Street, Chennai</p>
+          <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope"></i> info@stackly.com</p>
+
+          <button class="footer-btn" onclick="footerMessage()">Contact Now</button>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Stackly Learn. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

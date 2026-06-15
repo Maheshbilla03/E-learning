@@ -1,0 +1,155 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+  rgba(7,24,47,.75),
+  rgba(7,24,47,.85)
+  ),
+  url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.overlay{
+  width:100%;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.error-box{
+  max-width:650px;
+  width:100%;
+
+  text-align:center;
+
+  padding:50px 35px;
+
+  background:rgba(255,255,255,.08);
+
+  backdrop-filter:blur(15px);
+
+  border:1px solid rgba(0,212,255,.3);
+
+  border-radius:30px;
+
+  box-shadow:0 0 35px rgba(0,212,255,.2);
+}
+
+.error-box img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  border:3px solid #00d4ff;
+  margin-bottom:20px;
+}
+
+.error-box h1{
+  font-size:120px;
+  color:#00d4ff;
+  line-height:1;
+  text-shadow:0 0 20px #00d4ff;
+}
+
+.error-box h2{
+  margin-top:10px;
+  font-size:35px;
+  color:#fff;
+}
+
+.error-box p{
+  margin-top:15px;
+  color:#dbeafe;
+  line-height:1.8;
+}
+
+.buttons{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  text-decoration:none;
+  padding:14px 30px;
+  border-radius:30px;
+  font-weight:bold;
+
+  background:linear-gradient(
+  135deg,
+  #00d4ff,
+  #007bff
+  );
+
+  color:#07182f;
+
+  transition:.4s;
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 25px #00d4ff;
+}
+
+.btn2{
+  border:none;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .error-box{
+    padding:40px 20px;
+  }
+
+  .error-box h1{
+    font-size:90px;
+  }
+
+  .error-box h2{
+    font-size:28px;
+  }
+
+  .error-box p{
+    font-size:15px;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .error-box h1{
+    font-size:75px;
+  }
+
+  .error-box h2{
+    font-size:22px;
+  }
+
+  .error-box img{
+    width:80px;
+    height:80px;
+  }
+
+}
